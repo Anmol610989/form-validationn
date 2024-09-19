@@ -38,6 +38,11 @@ form.addEventListener("submit", (event) => {
       }
 });
 
+dismis_button.addEventListener('click', ()=>{
+    document.querySelector('.success').style.display = 'none'
+    document.querySelector('.main').style.display = 'flex'
+})
+
 function showError() {
   if (email.validity.valueMissing) {
     // If the field is empty,
