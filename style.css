@@ -87,15 +87,19 @@ body{
     margin-left: 4px;
 }
 
+.label-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
 
-
-.email-label{
+/* .email-label{
     display: block;
     position: relative;
     font-size: 12px;
     padding-bottom: 4px;
     margin-top: 10px;
-} 
+}  */
 
 #email{
     display: block;
@@ -122,12 +126,11 @@ input:invalid {
     width: 30%;
     padding: 0;
     right: 20px;
-    top: -4px;
     font-size: 80%;
     color: white;
     background-color:hsl(4, 100%, 67%);
     border-radius: 5px;
-  
+    text-align: center;
     box-sizing: border-box;
   }
   
@@ -186,7 +189,7 @@ input:invalid {
     color: hsl(235, 18%, 26%);
 }
 
-.dismiss-btn{
+#dismiss-btn{
     display: block;
     background-color: hsl(234, 29%, 20%);
     /* background: linear-gradient(to right, hsl(4, 100%, 58%), hsl(4, 100%, 67%)); */
@@ -200,6 +203,6 @@ input:invalid {
     cursor: pointer;
 }
 
-.dismiss-btn:hover{
+#dismiss-btn:hover{
     background: linear-gradient(to right, hsl(4, 100%, 58%), hsl(4, 100%, 67%));
 }
