@@ -22,6 +22,7 @@ submitBtn.addEventListener('click', function (e) {
       document.querySelector('.alert-email').innerHTML = email.value;
       document.querySelector('.main').style.display = 'none';
       success.style.display = 'flex';
+      emailError.textContent = ''
   }
 
 });
